@@ -1,0 +1,43 @@
+USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root           1  1.1  0.0 167040 12476 ?        Ss   11:57   1:18 /sbin/init
+root           2  0.0  0.0   2616  1444 ?        Sl   11:57   0:00 /init
+root           7  0.0  0.0   2660   132 ?        Sl   11:57   0:01 plan9 --control-socket 6 --log-level 4 --server-fd 7 --pipe-fd 9 --log-truncate
+root          36  0.0  0.0  47816 15240 ?        S<s  11:57   0:00 /lib/systemd/systemd-journald
+root          56  0.0  0.0  22096  5868 ?        Ss   11:57   0:00 /lib/systemd/systemd-udevd
+root          74  0.0  0.0 152992  2240 ?        Ssl  11:57   0:00 snapfuse /var/lib/snapd/snaps/bare_5.snap /snap/bare/5 -o ro,nodev,allow_other,suid
+root          75  0.0  0.0 152992   208 ?        Ssl  11:57   0:00 snapfuse /var/lib/snapd/snaps/core22_1722.snap /snap/core22/1722 -o ro,nodev,allow_other,suid
+root          77  0.0  0.0 152992  2240 ?        Ssl  11:57   0:00 snapfuse /var/lib/snapd/snaps/snapd_23258.snap /snap/snapd/23258 -o ro,nodev,allow_other,suid
+root          78  0.0  0.0 377284 11864 ?        Ssl  11:57   0:00 snapfuse /var/lib/snapd/snaps/core22_1748.snap /snap/core22/1748 -o ro,nodev,allow_other,suid
+root          79  0.0  0.0 153124   176 ?        Ssl  11:57   0:00 snapfuse /var/lib/snapd/snaps/gtk-common-themes_1535.snap /snap/gtk-common-themes/1535 -o ro,nodev,allow_other,suid
+root          97  0.0  0.0 152992  2240 ?        Ssl  11:57   0:00 snapfuse /var/lib/snapd/snaps/ubuntu-desktop-installer_1276.snap /snap/ubuntu-desktop-installer/1276 -o ro,nodev,allow_other,suid
+root         100  0.0  0.0 526812 16076 ?        Ssl  11:57   0:01 snapfuse /var/lib/snapd/snaps/snapd_23545.snap /snap/snapd/23545 -o ro,nodev,allow_other,suid
+root         103  0.0  0.0 302520 13852 ?        Ssl  11:57   0:00 snapfuse /var/lib/snapd/snaps/ubuntu-desktop-installer_1286.snap /snap/ubuntu-desktop-installer/1286 -o ro,nodev,allow_other,suid
+systemd+     123  0.0  0.0  25664 12756 ?        Ss   11:57   0:00 /lib/systemd/systemd-resolved
+root         158  0.0  0.0   4308  2616 ?        Ss   11:57   0:00 /usr/sbin/cron -f -P
+message+     160  0.0  0.0   8712  4908 ?        Ss   11:57   0:00 @dbus-daemon --system --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+root         171  0.0  0.1  35756 21100 ?        Ss   11:57   0:00 /usr/bin/python3 /usr/bin/networkd-dispatcher --run-startup-triggers
+syslog       173  0.0  0.0 222404  5236 ?        Ssl  11:57   0:00 /usr/sbin/rsyslogd -n -iNONE
+root         175  0.0  0.2 1912832 44960 ?       Ssl  11:57   0:00 /usr/lib/snapd/snapd
+root         176  0.0  0.0  15332  7384 ?        Ss   11:57   0:00 /lib/systemd/systemd-logind
+root         237  0.0  0.0   4784  3356 ?        Ss   11:57   0:00 /bin/bash /snap/ubuntu-desktop-installer/1286/bin/subiquity-server
+root         239  0.0  0.1 112960 23216 ?        Ssl  11:57   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+root         247  0.0  0.0   3240  1076 hvc0     Ss+  11:57   0:00 /sbin/agetty -o -p -- \u --noclear --keep-baud console 115200,38400,9600 vt220
+root         249  0.0  0.0   3196  1068 tty1     Ss+  11:57   0:00 /sbin/agetty -o -p -- \u --noclear tty1 linux
+root         326  0.1  0.6 1606620 100728 ?      Sl   11:57   0:07 /snap/ubuntu-desktop-installer/1286/usr/bin/python3.10 -m subiquity.cmd.server --use-os-prober --storage-version=2 --postinst-hooks-dir=/snap/ubuntu-desktop-installer/1286/etc/subiquity/postinst.d
+root         374  0.0  0.0   2620   124 ?        Ss   11:57   0:00 /init
+root         375  0.0  0.0   2620   128 ?        S    11:57   0:00 /init
+cfgs         376  0.0  0.0   6456  5396 pts/0    Ss   11:57   0:00 -bash
+root         377  0.0  0.0   7528  4784 pts/1    Ss   11:57   0:00 /bin/login -f
+cfgs         416  0.0  0.0  17172  9812 ?        Ss   11:57   0:00 /lib/systemd/systemd --user
+cfgs         417  0.0  0.0 168788  3372 ?        S    11:57   0:00 (sd-pam)
+cfgs         435  0.0  0.0  34256  6236 ?        Ssl  11:57   0:00 /usr/bin/pipewire
+cfgs         436  0.0  0.0  18280  6472 ?        Ssl  11:57   0:00 /usr/bin/pipewire-media-session
+cfgs         438  0.0  0.0   6256  5104 pts/1    S+   11:57   0:00 -bash
+rtkit        447  0.0  0.0 154004  1536 ?        SNsl 11:57   0:00 /usr/libexec/rtkit-daemon
+root         452  0.0  0.0 235440 10200 ?        Ssl  11:57   0:00 /usr/libexec/polkitd --no-debug
+cfgs         456  0.0  0.0   8300  4096 ?        Ss   11:57   0:00 /usr/bin/dbus-daemon --session --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+root         619  0.5  0.2  44184 38040 ?        S    11:57   0:40 python3 /snap/ubuntu-desktop-installer/1286/usr/bin/cloud-init status --wait
+root        7927  0.0  0.1 293044 20164 ?        Ssl  12:20   0:00 /usr/libexec/packagekitd
+cfgs       34679  0.0  0.0   6348  3788 pts/0    T    13:39   0:00 -bash
+cfgs       38709  0.0  0.0   4784  3272 pts/0    S+   13:55   0:00 /bin/bash ./ejemplo10.sh
+cfgs       38710  0.0  0.0   7484  3172 pts/0    R+   13:55   0:00 ps aux
